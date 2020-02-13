@@ -54,13 +54,13 @@ sendEmail = () => {
    transporter.sendMail(mailOptions, (err, info) => {
         if (err) {
             console.log(err);
-            sendSMS("Email Sending Failed! Try Again..")
+            sendSMS(" 🥴 Sending Failed. Try Again..")
         }
     });
     //Empty out the global mail object
     updateEmailState();
     addNewEmailObjectProperty();
-    return 'Email Sent!';
+    return '😉 Email sent!';
 }
 
 parseToSMS = (emailObject) => {
